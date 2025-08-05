@@ -219,3 +219,67 @@ This project would not be possible without the support of our partners. Thank yo
 ## License 📄
 
 This project is licensed under the Apache 2.0 License - see the [LICENSE](LICENSE) file for details
+
+Quivr là gì?
+Quivr là một dự án mã nguồn mở giúp bạn xây dựng "bộ não thứ hai" (second brain) cho riêng mình, sử dụng sức mạnh của AI sinh (Generative AI). Hiểu đơn giản, Quivr giống như một trợ lý ảo cá nhân, giúp bạn lưu trữ, tra cứu, và trả lời các câu hỏi dựa trên tài liệu của chính bạn.
+
+Quivr dùng để làm gì?
+Lưu trữ tri thức cá nhân: Bạn có thể nạp (ingest) các file như PDF, TXT, Markdown vào Quivr.
+
+Tìm kiếm và hỏi đáp: Bạn hỏi bất cứ điều gì liên quan đến dữ liệu đã nạp, Quivr sẽ dùng AI để trả lời chính xác và tự nhiên.
+
+Tùy biến cao: Quivr hỗ trợ nhiều loại AI (OpenAI, Anthropic, Mistral, v.v.), nhiều loại file, và cho phép bạn tích hợp thêm công cụ hoặc mở rộng chức năng.
+
+Quivr hoạt động như thế nào?
+Quivr sử dụng một kỹ thuật gọi là RAG (Retrieval Augmented Generation) – kết hợp giữa tìm kiếm thông tin và sinh nội dung bằng AI:
+
+Nạp tài liệu: Bạn đưa các file vào hệ thống.
+
+Tìm kiếm thông tin: Khi bạn đặt câu hỏi, hệ thống sẽ lọc ra các đoạn thông tin liên quan từ tài liệu.
+
+AI trả lời: AI sử dụng thông tin tìm được để tạo ra câu trả lời tự nhiên, giống như chat với một trợ lý ảo.
+
+Hướng dẫn cài đặt nhanh
+Chỉ cần vài bước đơn giản:
+
+Cài đặt:
+
+bash
+Sao chép
+Chỉnh sửa
+pip install quivr-core
+Tạo "bộ não": (ví dụ bằng Python)
+
+python
+Sao chép
+Chỉnh sửa
+from quivr_core import Brain
+brain = Brain.from_files(name="my brain", file_paths=["./file1.pdf", "./file2.txt"])
+Hỏi đáp:
+
+python
+Sao chép
+Chỉnh sửa
+answer = brain.ask("Nội dung câu hỏi của bạn")
+print(answer)
+Quivr phù hợp cho ai?
+Các bạn developer, researcher, học sinh/sinh viên, hoặc bất kỳ ai muốn xây dựng một hệ thống "tra cứu thông tin cá nhân" bằng AI.
+
+Đặc biệt phù hợp cho những ai muốn tạo chatbot cho tài liệu riêng, tổng hợp kiến thức, làm trợ lý AI cho nhóm/lớp/hệ thống nội bộ.
+
+Một số điểm nổi bật
+Hỗ trợ nhiều mô hình AI: Dùng OpenAI, Anthropic, Mistral, v.v.
+
+Tích hợp với nhiều file: PDF, TXT, Markdown, dễ dàng mở rộng parser.
+
+Tùy biến workflow: Có thể cấu hình quy trình RAG qua file YAML.
+
+Mã nguồn mở: Thoải mái tùy chỉnh, đóng góp hoặc sử dụng miễn phí.
+
+Học thêm & hỗ trợ
+Xem tài liệu chính thức tại: core.quivr.com
+
+Tham gia cộng đồng Discord để hỏi đáp, hỗ trợ.
+
+Tóm lại:
+Quivr giúp bạn tạo một "trợ lý AI cá nhân" dựa trên tài liệu của riêng mình, cực kỳ dễ dùng và linh hoạt mở rộng. Nếu bạn muốn có một nơi để lưu, hỏi – đáp thông tin cá nhân, team, công ty… bằng AI, thì đây là dự án rất đáng thử!
